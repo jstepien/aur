@@ -4,13 +4,13 @@
 _hkgname=hmatrix
 pkgname=haskell-hmatrix
 pkgver=0.12.0.2
-pkgrel=1
+pkgrel=2
 pkgdesc="Linear algebra and numerical computation"
 url="http://hackage.haskell.org/package/${_hkgname}"
 license=('GPL')
 arch=('i686' 'x86_64')
 makedepends=()
-depends=('ghc' 'haskell-hunit=1.2.2.3' 'haskell-quickcheck=2.4.0.1' 'haskell-array=0.3.0.2' 'haskell-binary' 'haskell-process=1.0.1.5' 'haskell-random=1.0.0.3' 'haskell-storable-complex' 'haskell-vector>=0.8')
+depends=('gsl' 'lapack' 'ghc' 'haskell-hunit=1.2.2.3' 'haskell-quickcheck=2.4.0.1' 'haskell-array=0.3.0.2' 'haskell-binary' 'haskell-process=1.0.1.5' 'haskell-random=1.0.0.3' 'haskell-storable-complex' 'haskell-vector>=0.8')
 options=('strip')
 source=(http://hackage.haskell.org/packages/archive/${_hkgname}/${pkgver}/${_hkgname}-${pkgver}.tar.gz)
 install=${pkgname}.install
